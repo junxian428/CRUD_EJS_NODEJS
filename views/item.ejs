@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>New Item</title>
+  <title>Item</title>
 </head>
 <body>
-  <h1>New Item</h1>
-  <form action="/item" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <button type="submit">Create</button>
-  </form>
+  <h1><%= item.name %></h1>
+  <a href="/item/edit/<%= item.id %>">Edit</a>
+  <a href="/item/delete/<%= item.id %>">Delete</a>
 </body>
-</html
+</html>

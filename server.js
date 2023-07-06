@@ -25,7 +25,7 @@ app.get('/item/:id', (req, res) => {
 });
 
 // Route for creating a new item (display form)
-app.get('/item/new', (req, res) => {
+app.get('/new', (req, res) => {
   res.render('new');
 });
 
